@@ -11,7 +11,25 @@ class boovie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Platform Pencarian Film Trend & Populer',
+      home:Home(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: Brightness.dark,
+      primaryColor: Color.fromARGB(255, 7, 14, 58)),
       );
+  }
+}
+
+class Home extends StatefulWidget {
+  
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Platform Pencarian Film Trend & Populer')),
+    );
   }
 }
